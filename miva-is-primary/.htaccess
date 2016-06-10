@@ -1,0 +1,19 @@
+### Begin - (Custom) Miva Merchant URI Management
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{REQUEST_URI} !^/wp-.*$
+RewriteCond %{REQUEST_URI} !^/blog/.*$
+RewriteCond %{REQUEST_URI} !^/mm5/.*$
+RewriteRule ^(.*)$ /mm5/uri.mvc? [QSA,L]
+### End - (Custom) Miva Merchant URI Management
+
+
+# BEGIN (Custom) WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END (Custom) WordPress
