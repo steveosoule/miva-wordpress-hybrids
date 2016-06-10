@@ -3,7 +3,7 @@
 
 ## About
 
-This file structure is used to demonstrate how Miva & WordPress can be installed at a site's web root. Miva's URI management and WordPresses Permalinks can be coordinated to work on the same domain.
+The file structure above is used to demonstrate how Miva & WordPress can be installed at a site's web root. Miva's URI management and WordPresses Permalinks can be coordinated to work on the same domain.
 
 It just requires updating the `.htacces` file, and updating WordPress's Site Address Settings.
 
